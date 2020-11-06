@@ -1,0 +1,79 @@
+body{
+	margin:0px;
+}
+.heading{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color:#77b1a3;
+	margin-left:20px;
+}
+.login{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	position:absolute;
+	right:100px;
+	top:30px;
+	color:#77b1a3;
+	font-size:20px;
+	font-weight:bold;
+}
+.armenian_flag{
+	position:absolute;
+	right:40px;
+	top:20px;
+	width:50px;
+}
+.page_section{
+	background-color:#5fa292;
+	padding:20px;
+}
+.page_section a{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left:50px;
+	color:white;
+	font-size:20px;
+}
+.menu_bar{
+	background-color:#64c9b1;
+	padding:15px;
+}
+.menu_bar a{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-left:30px;
+	color:white;
+	font-size:20px;
+	text-decoration:none;
+}
+.main_page{
+	text-decoration:none;
+}
+.nature img{
+	width:500px;
+	margin:50px;
+}
+.first_paragraph{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight:200;
+	font-size:22px;
+	width:500px;
+	position:absolute;
+	left:50%;
+	top:115%;
+}
+.second_paragraph{
+	position:absolute;
+	top:188%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight:200;
+	font-size:22px;
+	width:93%;
+	margin-left:3%;
+	margin-bottom:3%;
+}
+.footer{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin-top:200px;
+	background-color:#77b1a3;
+	padding:30px;
+	color:white;
+	font-size:20px;
+}
+
