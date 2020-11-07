@@ -1,15 +1,16 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Այգեձոր | Վայրեր</title>
+		<title>Այգեձոր | Զնոսաշրջություն</title>
 		<link rel="stylesheet" href="../styles/churches_armenian.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<h1 class="heading">Այգեձոր</h1>
-		<div class="login">
-			<a>Մուտք |</a>
+		<div class="head">
+			<h1 class="heading">Այգեձոր</h1>
+			<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/churches.html'">
+			<img class="russian_flag" src="../img/russian_flag.png" onclick="location.href='../html/churches_russian.html'">
 		</div>
-		<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/churches.html'">
 		<div class="page_section">
 			<a class='main_page' href='../html/main_armenian.html'>Գլխավոր</a>
                         <a>Մշակույթ</a>
@@ -19,9 +20,9 @@
                         <a>Ազդագիր</a>
 		</div>
 		<div class="menu_bar">
-			<a href='../html.churches_armenian.html'" style="font-weight: 500; color: #223a34">Եկեղեցիներ</a>
-			<a href="../html/Nature_armenian.html">Բնություն</a>
-			<a href="../html/places_armenian.html">Արկածային վայրեր</a>
+			<a href="../html.churches_armenian.html" style="font-weight: 500; color: #223a34">Տեսարժան վայրեր</a>
+			<a href="../html/Nature_armenian.html">Արշավային ուղիներ</a>
+			<a href="../html/places_armenian.html">Բնապատկերներ</a>
 		</div>
 		<div class="churches">
 			<img src="../img/1church.JPG">
@@ -30,5 +31,26 @@
 		<div class="footer">
 			<p><b>©ԻրականԴԱՍ</b></p>
 		<div>
+		<div class="scrollup" style="transition: all 0.3s ease 0s">
+			<img class="scrolimg" src="../img/scrollup.png">
+		</div>
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			$('.scrollup').on('click', function(){
+			  var body = $("html, body");
+			  body.stop().animate({scrollTop:0}, 1500, 'swing');
+			})
+		</script>
 	</body>
 </html>
