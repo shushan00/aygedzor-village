@@ -1,5 +1,6 @@
 body {
 	margin:0px;
+	margin: 0px;
 }
 
 .head {
@@ -28,6 +29,7 @@ body {
 	color: #77b1a3;
 	margin-left: 20px;
 }
+
 .menu {
 	position: fixed;
 	background-color: #5fa292;
