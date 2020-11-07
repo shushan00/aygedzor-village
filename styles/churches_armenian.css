@@ -1,43 +1,55 @@
 body{
 	margin:0px;
 }
+
 .heading{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	color:#77b1a3;
 	margin-left:20px;
 }
-.login{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	position:absolute;
-	right:100px;
-	top:30px;
-	color:#77b1a3;
-	font-size:20px;
-	font-weight:bold;
+
+.head {
+	position: relative;
+	top: 0%;
+	height: 60px;
+	background-color: white;
 }
+
 .usa_flag{
-	position:absolute;
-	right:40px;
-	top:15px;
-	width:50px;
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	width: 50px;
 }
+
+.russian_flag {
+	position: absolute;
+	right: 100px;
+	top: 5px;
+	height: 50px;
+}
+
 .page_section{
 	background-color:#5fa292;
 	padding:20px;
 }
+
 .page_section a{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin-left:50px;
 	color:white;
 	font-size:20px;
 }
+
 .main_page{
 	text-decoration:none;
 }
+
 .menu_bar{
 	background-color:#64c9b1;
 	padding:15px;
 }
+
 .menu_bar a{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin-left:30px;
@@ -45,10 +57,12 @@ body{
 	font-size:20px;
 	text-decoration:none;
 }
+
 .churches img{
 	width:500px;
 	margin:50px;
 }
+
 .footer{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	padding:30px;
@@ -56,4 +70,20 @@ body{
 	color:white;
 	font-size:20px;
 
+}
+
+.scrolimg {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+
+.scrollup {
+	bottom: 4%;
+	display: none; 
+	opacity: 0;
+	position: fixed;
+	transition: 0.5s ease;
+	z-index: 2;	
+	right: 3%;
 }
