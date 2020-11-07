@@ -3,24 +3,26 @@ body {
 }
 
 .head {
-	position: absolute;
+	position: relative;
 	top: 0%;
+	height: 60px;
 	background-color: white;
-	height: 130px;
 }
 
 .russian_flag {
 	position: absolute;
-	right: 80px;
-	top: 20px;
-	width: 50px;
+	right: 100px;
+	top: 5px;
+	height: 35px;
 }
 
 .armenian_flag {
 	position: absolute;
+	vertical-align: middle;
+	line-height: 35px;
 	right: 40px;
-	top: 20px;
-	width: 50px;
+	top: 5px;
+	height: 37px;
 }
 
 .aygedzor {
