@@ -2,6 +2,14 @@ body {
 	margin: 0px;
 }
 
+.head {
+        position: absolute;
+        right: 100px;
+        top: 30px;
+}
+
+}
+
 .armenian_flag {
 	position: absolute;
 	right: 40px;
