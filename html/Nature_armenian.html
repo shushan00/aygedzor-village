@@ -2,15 +2,17 @@
 <html>
         <head>
 		<link rel="stylesheet" href="../styles/nature_armenian.css">
+		<meta charset="utf-8">
                 <title>Այգեձոր | Վայրեր</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         </head>
         <body>
-                <h1 class="heading">Այգեձոր</h1>
-                <div class="login">
-                        <a>Մուտք |</a>
-                </div>
-		<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/Nature.html'">
-                <div class="page_section">
+		<div class="head">
+	                <h1 class="heading">Այգեձոր</h1>
+			<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/Nature.html'">
+			<img class="russian_flag" src="../img/russian_flag.png" onclick="location.href='../html/nature_russian.html'">
+		</div>        
+	        <div class="page_section">
                         <a class='main_page' href='../html/main_armenian.html'>Գլխավոր</a>
 			<a>Մշակույթ</a>
                         <a>Կրթություն</a>
@@ -41,5 +43,26 @@
                 <div class="footer">
 			<p><b>©RealSWB</b></p>
                 <div>
+		<div class="scrollup" style="transition: all 0.3s ease 0s">
+			<img class="scrolimg" src="../img/scrollup.png">
+		</div>
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			$('.scrollup').on('click', function(){
+			  var body = $("html, body");
+			  body.stop().animate({scrollTop:0}, 1500, 'swing');
+			})
+		</script>
         </body>
 </html>

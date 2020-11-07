@@ -3,13 +3,14 @@
 	<head>
 		<title>Айгедзор | Достопримечательности</title>
 		<link rel="stylesheet" href="../styles/churches_russian.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<h1 class="heading">Айгедзор</h1>
-		<div class="login">
-			<a>Войти|</a>
+		<div class="head">
+			<h1 class="heading">Այգեձոր</h1>
+			<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/churches.html'">
+			<img class="armenian_flag" src="../img/armenian_flag.png" onclick="location.href='../html/churches_armenian.html'">
 		</div>
-		<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/churches.html'">
 		<div class="page_section">
 			<a class='main_page' href='../html/main_armenian.html'>Главная</a>
                         <a>Культура</a>
@@ -40,5 +41,26 @@
 		<div class="footer">
 			<p><b>©ԻրականԴԱՍ</b></p>
 		<div>
+		<div class="scrollup" style="transition: all 0.3s ease 0s">
+			<img class="scrolimg" src="../img/scrollup.png">
+		</div>
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			$('.scrollup').on('click', function(){
+			  var body = $("html, body");
+			  body.stop().animate({scrollTop:0}, 1500, 'swing');
+			})
+		</script>
 	</body>
 </html>

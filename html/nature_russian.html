@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+        <head>
+		<link rel="stylesheet" href="../styles/nature_russian.css">
+		<meta charset="utf-8">
+                <title>Айгедзор | Достопримечательности</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+        <body>
+		<div class="head">
+                	<h1 class="heading">Айгедзор</h1>
+			<img class="armenian_flag" src="../img/armenian_flag.png" onclick="location.href='../html/Nature_armenian.html'">
+			<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/nature.html'">     
+		</div>
+		<div class="page_section">
+                        <a class='main_page' href='../html/main.html'>Главная</a>
+                        <a style="font-weight: 500; color: #223a34">Достопримечательности</a>
+                        <a>Культура</a>
+                        <a>Туризм</a>
+                        <a>Новости</a>
+                </div>
+		<div class="menu_bar">
+                        <a href="../html/churches.html">Церкви</a>
+                        <a style="font-weight: 500; color: #223a34">Природа</a>
+                        <a href="../html/places.html">Приключенческие места</a>
+                </div>
+                <div class="nature">
+                        <img src="../img/nature.jpg">
+                        <img src="../img/i.jpeg">
+			<img src="../img/Aygedzor.jpg">
+                </div>
+		<div>
+			<p class='first_paragraph'><b>Айгедзор обладает уникальной природой. Есть много ягод и фруктов, обладающих неповторимым вкусом. В Айгедзоре много очень красивых лесов. Свежая и красивая природа очаровывает всех, она прекрасна в любое время года. Зимой его покрывают белые снежинки, что делает его красивее. Здесь много гор, на которые можно подняться, можно увидеть уникальные деревья и ягоды.
+	Большая часть населения занимается сельским хозяйством и пчеловодством. Также в Айгедзоре строится церковь, которая, на мой взгляд, будет очень роскошной и большой.
+	Я люблю гулять здесь по лесам и наслаждаться прекрасной природой<br>
+	Елена Касумян</b></p>
+			<p class='second_paragraph'><b>
+				В Айгедзоре много красивых мест, каждый камень имеет свою неповторимость и красоту, вокруг вас только чистая природа. На каждом шагу в Айгедзоре чувствуешь звук природы, зов, пение птиц и шелест деревьев. Я очень люблю нашу маленькую деревню. А также любимая нами Чтавор Кар, на которой сохранились древние надписи. А еще здесь находится монастырь Святой Рипсиме, возле которого построена небольшая церковь.
+Очень люблю Айгедзор.
+Милена Ордян
+			</b></p>
+		</div>
+                <div class="footer">
+			<p><b>©RealSWB</b></p>
+                <div>
+		<div class="scrollup" style="transition: all 0.3s ease 0s">
+			<img class="scrolimg" src="../img/scrollup.png">
+		</div>
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			$('.scrollup').on('click', function(){
+			  var body = $("html, body");
+			  body.stop().animate({scrollTop:0}, 1500, 'swing');
+			})
+		</script>
+        </body>
+</html>

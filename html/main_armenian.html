@@ -4,15 +4,14 @@
 		<title>Այգեձոր | Գլխավոր էջ</title>
 		<meta charset="utf-8">
 		<link rel='stylesheet' href='../styles/main_armenian.css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div>
+		<div class="head">
 			<h1 class="aygedzor">Այգեձոր</h1>
+			<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/main.html'">
+			<img class="russian_flag" src="../img/russian_flag.png" onclick="location.href='../html/main_russian.html'">
 		</div>
-		<div class="login">	
-			<a>Մուտք |</a>
-		</div>
-		<img class="usa_flag" src="../img/usa_flag.png" onclick="location.href='../html/main.html'">
 		<div class="menu">
 			<a style="font-weight: 500; color: #223a34">Գլխավոր</a>
 			<a>Մշակույթ</a>
@@ -26,5 +25,26 @@
 		<div class="footer">
 			<h2 class="realswb"><b> ©ԻրականԴԱՍ</b></h2>
 		</div>
+		<div class="scrollup" style="transition: all 0.3s ease 0s">
+			<img class="scrolimg" src="../img/scrollup.png">
+		</div>
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			$('.scrollup').on('click', function(){
+			  var body = $("html, body");
+			  body.stop().animate({scrollTop:0}, 1500, 'swing');
+			})
+		</script>
 	</body>
 </html>
