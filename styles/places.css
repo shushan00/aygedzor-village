@@ -1,40 +1,51 @@
 body{
 	margin:0px;
 }
+
 .heading{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color:#77b1a3;
 	margin-left:20px;
 }
-.login{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	position:absolute;
-	right:100px;
-	top:30px;
-	color:#77b1a3;
-	font-size:20px;
-	font-weight:bold;
+
+.head {
+	position: relative;
+	top: 0%;
+	height: 60px;
+	background-color: white;
 }
-.armenian_flag{
-	position:absolute;
-	right:40px;
-	top:20px;
-	width:50px;
+
+.russian_flag {
+	position: absolute;
+	right: 100px;
+	top: 5px;
+	height: 50px;
 }
+
+.armenian_flag {
+	position: absolute;
+	right: 40px;
+	top: 5px;
+	height: 50px;
+}
+
 .page_section{
 	background-color:#5fa292;
 	padding:20px;
 }
+
 .page_section a{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left:50px;
 	color:white;
 	font-size:20px;
 }
+
 .menu_bar{
 	background-color:#64c9b1;
 	padding:15px;
 }
+
 .menu_bar a{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left:30px;
@@ -42,12 +53,15 @@ body{
 	font-size:20px;
 	text-decoration:none;
 }
+
 .main_page{
 	text-decoration:none;
 }
+
 .places img{
 	margin:50px;
 }
+
 h2 {
 	position: absolute;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -57,6 +71,7 @@ h2 {
 	left: 50%;
 	top: 33%;
 }
+
 .main_paragraph{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size:23px;
@@ -67,10 +82,27 @@ h2 {
 	left:30%;
 	top:43%;
 }
+
 .footer{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding:30px;
 	background-color:#77b1a3;
 	color:white;
 	font-size:20px;
+}
+
+.scrolimg {
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+
+.scrollup {
+	bottom: 4%;
+	display: none; 
+	opacity: 0;
+	position: fixed;
+	transition: 0.5s ease;
+	z-index: 2;	
+	right: 3%;
 }

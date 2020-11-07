@@ -2,18 +2,25 @@ body {
 	margin:0px;
 }
 
-.russian_flag {
+.head {
+	position: relative;
+	top: 0%;
+	height: 60px;
+	background-color: white;
+}
+
+.usa_flag{
 	position: absolute;
-	right: 80px;
-	top: 20px;
-	width: 50px;
+	right: 100px;
+	top: 5px;
+	height: 50px;
 }
 
 .armenian_flag {
 	position: absolute;
 	right: 40px;
-	top: 20px;
-	width: 50px;
+	top: 5px;
+	height: 50px;
 }
 
 .aygedzor {
@@ -21,6 +28,7 @@ body {
 	color: #77b1a3;
 	margin-left: 20px;
 }
+
 .menu {
 	position: fixed;
 	background-color: #5fa292;

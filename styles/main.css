@@ -13,16 +13,14 @@ body {
 	position: absolute;
 	right: 100px;
 	top: 5px;
-	height: 35px;
+	height: 50px;
 }
 
 .armenian_flag {
 	position: absolute;
-	vertical-align: middle;
-	line-height: 35px;
 	right: 40px;
 	top: 5px;
-	height: 37px;
+	height: 50px;
 }
 
 .aygedzor {

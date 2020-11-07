@@ -3,7 +3,7 @@ body{
 }
 
 .heading{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color:#77b1a3;
 	margin-left:20px;
 }
@@ -17,14 +17,14 @@ body{
 
 .usa_flag{
 	position: absolute;
-	right: 40px;
+	right: 100px;
 	top: 5px;
-	width: 50px;
+	height: 50px;
 }
 
-.russian_flag {
+.armenian_flag {
 	position: absolute;
-	right: 100px;
+	right: 40px;
 	top: 5px;
 	height: 50px;
 }
@@ -35,7 +35,7 @@ body{
 }
 
 .page_section a{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left:50px;
 	color:white;
 	font-size:20px;
@@ -47,7 +47,7 @@ body{
 }
 
 .menu_bar a{
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-left:30px;
 	color:white;
 	font-size:20px;
@@ -64,31 +64,28 @@ body{
 }
 
 .first_paragraph{
-	background-color: rgb(212, 240, 240);
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight:200;
-	font-size:18px;
+	font-size:22px;
 	width:500px;
 	position:absolute;
-	line-height: 150%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	left:50%;
 	top:115%;
 }
 
 .second_paragraph{
-	background-color: rgb(212, 240, 240);
 	position:absolute;
-	top:187%;
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	line-height: 150%;
+	top:188%;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-weight:200;
-	font-size:18px;
+	font-size:22px;
 	width:93%;
 	margin-left:3%;
 	margin-bottom:3%;
 }
 
 .footer{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-top:200px;
 	background-color:#77b1a3;
 	padding:30px;
