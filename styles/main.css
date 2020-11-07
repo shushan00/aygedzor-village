@@ -3,9 +3,10 @@ body {
 }
 
 .head {
-        position: relative;
-        right: 100px;
-        top: 30px;
+	position: absolute;
+	top: 0%;
+	background-color: white;
+	height: 130px;
 }
 
 .russian_flag {
