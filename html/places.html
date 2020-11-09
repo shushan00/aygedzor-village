@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
         <head>
-                <title>Aygedzor | Places</title>
+                <title>Aygedzor | Tourism</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="../styles/places.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,12 +34,12 @@
 				Aghjakakar rock is located on the right bank of Aghnja river, 4 km south-west of Aygedzor village.
 According to one of the legends, in the unequal battle against the enemy, Ashot II sends a strong, broad-shouldered girl to throw a huge stone from the fortress towards the enemy. The enemy gets terrified, thinking, if the girls are so strong, what can the men do, and retreats. From that day that place was called Aghjkakar. The locals believe in their myths, every year in July they go on a pilgrimage to Aghjakar to get strength and energy, success and charity. And they do not go empty-handed.
 			</b></p>
-                <div class="footer">
+		<div class="footer">
 			<p><b>©RealSWB</b></p>
-                <div>
-		<div class="scrollup" style="transition: all 0.3s ease 0s">
-			<img class="scrolimg" src="../img/scrollup.png">
 		</div>
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 		<script>
 			$(window).on('scroll', function () {
 			  var scroll = $(window).scrollTop();
@@ -53,12 +53,21 @@ According to one of the legends, in the unequal battle against the enemy, Ashot 
 			    $('.scrollup').hide(200)
 			  }
 			});
-			$('.scrollup').on('click', function(){
-			  var body = $("html, body");
-			  body.stop().animate({scrollTop:0}, 1500, 'swing');
-			})
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
 		</script>
         </body>
 </html>
-
-
