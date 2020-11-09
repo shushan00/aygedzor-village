@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+        <head>
+		<link rel="stylesheet" href="../../styles/hiking.css">
+		<meta charset="utf-8">
+                <title>Aygedzor | Tourism</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        </head>
+        <body>
+                <div class="head">
+					<h1 class="heading">Aygedzor</h1>
+					<img class="russian_flag" src="../../img/russian_flag.png" onclick="location.href='../russian/hiking.html'">
+					<img class="armenian_flag" src="../../img/armenian_flag.png" onclick="location.href='../armenian/hiking.html'">
+				</div>
+                <div class="page_section">
+                        <a class='main_page' href='../english/main.html'>Home</a>
+                        <a>Culture</a>
+						<a>Education</a>
+                        <a style="font-weight: 500; color: #223a34">Tourism</a>
+                        <a>People</a>
+                        <a href="../english/news.html">Newspaper</a>
+				</div>
+				<div class="menu_bar">
+                	<a href="../english/attractions.html">Attractions</a>
+                    <a style="font-weight: 500; color: #223a34">Hiking Trails</a>
+                    <a href="../english/scenery.html">Scenery</a>
+                </div>
+       			<div class="footer">
+					<p><b>©RealSWB</b></p>
+        		</div>
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+        </body>
+</html>
