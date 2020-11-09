@@ -1,12 +1,12 @@
 body{
 	margin:0px;
+	background-color: #ffffff;
 }
 
 .head {
 	position: relative;
 	top: 0%;
 	height: 60px;
-	background-color: white;
 }
 
 .russian_flag {
@@ -30,7 +30,7 @@ body{
 }
 
 .page_section{
-	background-color:#5fa292;
+	background-color:#5a9c8d;
 	padding:20px;
 }
 
@@ -42,7 +42,7 @@ body{
 }
 
 .menu_bar{
-	background-color:#64c9b1;
+	background-color:#5fc2ab;
 	padding:15px;
 }
 
@@ -58,35 +58,10 @@ body{
 	text-decoration:none;
 }
 
-.nature img{
-	width:500px;
-	margin:50px;
-}
-
-.first_paragraph{
-	background-color: rgb(212, 240, 240);
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight:200;
-	font-size:22px;
-	width:500px;
-	position:absolute;
-	left:50%;
-	top:115%;
-}
-
-.second_paragraph{
-	background-color: rgb(212, 240, 240);
-	position:absolute;
-	top:188%;
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	font-weight:200;
-	font-size:22px;
-	width:93%;
-	margin-left:3%;
-	margin-bottom:3%;
-}
-
 .footer{
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	margin-top:200px;
 	background-color:#77b1a3;
