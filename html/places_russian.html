@@ -3,7 +3,7 @@
         <head>
                 <title>Айгедзор | Туризм</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../styles/places_russian.css">
+		<link rel="stylesheet" href="../styles/places_armenian.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         </head>
         <body>
@@ -33,12 +33,12 @@
 			<p class='main_paragraph'><b>
 				Согласно одной из легенд, в неравном бою с противником,  Ашот Еркат посылает сильную широкоплечую девушку бросить огромный камень из крепости в сторону врага. Враг в ужасе, думает, если девушки такие сильные, что делать мужчинам, и они отступают. С того дня это место стало называться Ахчкакар. Местные жители верят в свои мифы, ежегодно в июле они отправляются в паломничество в Ахчкакар, чтобы набраться сил и энергии, успеха и благотворительности. Они не идут с пустыми руками. Они берут с собой ритуальный хлеб, испеченный накануне, и сладкое вино, чтобы они могли есть под камнем девушки после очищения в реке Агнйа и получить благословение земных и небесных сил.
 			</b></p>
-                <div class="footer">
+       	<div class="footer">
 			<p><b>©ԻրականԴԱՍ</b></p>
-                <div>
-<div class="scrollup" style="transition: all 0.3s ease 0s">
-			<img class="scrolimg" src="../img/scrollup.png">
 		</div>
+
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 		<script>
 			$(window).on('scroll', function () {
 			  var scroll = $(window).scrollTop();
@@ -52,10 +52,21 @@
 			    $('.scrollup').hide(200)
 			  }
 			});
-			$('.scrollup').on('click', function(){
-			  var body = $("html, body");
-			  body.stop().animate({scrollTop:0}, 1500, 'swing');
-			})
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
 		</script>
         </body>
 </html>
