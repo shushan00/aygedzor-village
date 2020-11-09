@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
         <head>
-                <title>Այգեձոր | Վայրեր</title>
+                <title>Այգեձոր | Զբոսաշրջություն</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" href="../styles/places_armenian.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,10 +33,40 @@
 			<p class='main_paragraph'><b>
 				Ավանդազրույցներից մեկի համաձայն թշնամու դեմ մղված անհավասար մարտում Աշոտ երկաթը նեղն է ընկնում և մի հաղթանդամ, լայն ուսերով աղջկա ուղարկում է՝ բերդից հսկա քար է գցել տալիս թշնամու կողմը։ Թշնամին սարսափում է մտածելով, եթե աղջիկներն այսքան ուժեղ են բա տղամարդիկ ինչեր կարող են անել և նահանջում է։ Այդ օրվանից այդ տեղանքը կոչվել է Աղջկաքար։ Տեղաբնիկները հավատում են իրենց առասպելներին և ամեն տարի հուլիսին գնում են ուխտագնացության դեպի Աղջկաքար, որպեսզի ուժ ու եռանդ, հաջողություն ու բարերարություն ստանան։ Դատարկաձեռն չեն գնում, իրենց հետ տանում են ատաղ՝ նախորդ օրը թխած ծիսական հաց ու քաղցր գինի, որպեսզի աղջկա քարի տակ Աղնջա գետում մաքրազօծվելուց հետո ուտեն, ու երկրային ու երկնային ուժերից օրհնվեն։
 			</b></p>
-                <div class="footer">
+		<div class="footer">
 			<p><b>©ԻրականԴԱՍ</b></p>
-                <div>
+		</div>
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<script>
+			$(window).on('scroll', function () {
+			  var scroll = $(window).scrollTop();
+			  if (scroll > 50) {
+			    $('.menu').css('margin-top', '-81px')
+			    $('.scrollup').show(200)
+			    $('.scrollup').css('opacity', '1')
+			  } else {
+			    $('.menu').css('margin-top', '0px')
+			    $('.scrollup').css('opacity', '0')
+			    $('.scrollup').hide(200)
+			  }
+			});
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
         </body>
 </html>
-
-
