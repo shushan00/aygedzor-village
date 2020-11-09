@@ -25,9 +25,9 @@
 		<div class="footer">
 			<h2 class="realswb"><b>©RealSWB</b></h2>
 		</div>
-		<div class="scrollup" style="transition: all 0.3s ease 0s">
-			<img class="scrolimg" src="../img/scrollup.png">
-		</div>
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 		<script>
 			$(window).on('scroll', function () {
 			  var scroll = $(window).scrollTop();
@@ -41,10 +41,21 @@
 			    $('.scrollup').hide(200)
 			  }
 			});
-			$('.scrollup').on('click', function(){
-			  var body = $("html, body");
-			  body.stop().animate({scrollTop:0}, 1500, 'swing');
-			})
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
 		</script>
 	</body>
 </html>
