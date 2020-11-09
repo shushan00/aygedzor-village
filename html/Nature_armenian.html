@@ -3,7 +3,7 @@
         <head>
 		<link rel="stylesheet" href="../styles/nature_armenian.css">
 		<meta charset="utf-8">
-                <title>Այգեձոր | Վայրեր</title>
+                <title>Այգեձոր | Զբոսաշրջություն</title>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         </head>
         <body>
@@ -40,12 +40,12 @@
 				Այգեձորն ունի շատ գեղեցիկ վայրեր, ամեն մի քար ունի իր յուրահատկությունը եւ գեղեցկությունը, շուրջդ միայն մաքուր բնություն է։ Այգեձորում ամեն մի քայլ անելուց զգում ես բնության ձայնը, կանչը, թռչունների ճռվողյունը եւ ծառերի խշխշոցը։ Ես շատ եմ սիրում մեր փոքրիկ գյուղը։ Ինչպես նաեւ մեր սիրելի Ճտավոր քարը, որի վրա կան նաեւ հնադարյան գրություններ, որոնք մինչեւ օրս պահպանվել են։ Եւ կա Սուրբ Հռիփսիմե վանքը, որի մոտ կառուցել են փոքրիկ եկեղեցի, այսպես կոչված՝ մատուռ։<br>
 	Ես շատ եմ սիրում Այգեձորը։<br>Միլենա Օրդյան</b></p>
 		</div>
-                <div class="footer">
+        <div class="footer">
 			<p><b>©RealSWB</b></p>
-                <div>
-		<div class="scrollup" style="transition: all 0.3s ease 0s">
-			<img class="scrolimg" src="../img/scrollup.png">
-		</div>
+        </div>
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 		<script>
 			$(window).on('scroll', function () {
 			  var scroll = $(window).scrollTop();
@@ -59,10 +59,21 @@
 			    $('.scrollup').hide(200)
 			  }
 			});
-			$('.scrollup').on('click', function(){
-			  var body = $("html, body");
-			  body.stop().animate({scrollTop:0}, 1500, 'swing');
-			})
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
 		</script>
         </body>
 </html>
