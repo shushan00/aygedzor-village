@@ -3,12 +3,6 @@ body{
 	background-color: #ffffff;
 }
 
-.heading{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	color:#77b1a3;
-	margin-left:20px;
-}
-
 .head {
 	position: relative;
 	top: 0%;
@@ -29,6 +23,12 @@ body{
 	height: 50px;
 }
 
+.heading{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color:#77b1a3;
+	margin-left:20px;
+}
+
 .page_section{
 	background-color:#5a9c8d;
 	padding:20px;
@@ -36,13 +36,10 @@ body{
 
 .page_section a{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin-left:50px;
-	color:white;
-	font-size:20px;
-}
-
-.main_page{
-	text-decoration:none;
+	text-decoration: none;
+	margin-left: 50px;
+	color: white;
+	font-size: 20px;
 }
 
 .menu_bar{
@@ -52,15 +49,10 @@ body{
 
 .menu_bar a{
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	margin-left:30px;
-	color:white;
-	font-size:20px;
-	text-decoration:none;
-}
-
-.churches img{
-	width:500px;
-	margin:50px;
+	margin-left: 30px;
+	color: white;
+	font-size: 20px;
+	text-decoration: none;
 }
 
 .footer{
@@ -68,8 +60,9 @@ body{
 	bottom: 0%;
 	width: 100%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-	padding:30px;
+	margin-top:200px;
 	background-color:#77b1a3;
+	padding:30px;
 	color:white;
 	font-size:20px;
 }
