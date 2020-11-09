@@ -60,7 +60,7 @@ body{
 
 
 .footer{
-	width: auto;
+	width: fit-content;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding-top: 30px;
 	padding-left: 30px;
