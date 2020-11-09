@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Aygedzor | Places</title>
+		<title>Aygedzor | Tourism</title>
 		<link rel="stylesheet" href="../styles/churches.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
@@ -30,10 +30,10 @@
 		</div>
 		<div class="footer">
 			<p><b>©RealSWB</b></p>
-		<div>
-		<div class="scrollup" style="transition: all 0.3s ease 0s">
-			<img class="scrolimg" src="../img/scrollup.png">
-		</div>
+		</div> 
+		
+      	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
 		<script>
 			$(window).on('scroll', function () {
 			  var scroll = $(window).scrollTop();
@@ -47,10 +47,21 @@
 			    $('.scrollup').hide(200)
 			  }
 			});
-			$('.scrollup').on('click', function(){
-			  var body = $("html, body");
-			  body.stop().animate({scrollTop:0}, 1500, 'swing');
-			})
+			var mybutton = document.getElementById("myBtn");
+
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			    mybutton.style.display = "block";
+				} else {
+			  	mybutton.style.display = "none";
+				}
+			}
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
 		</script>
 	</body>
 </html>
