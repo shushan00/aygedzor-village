@@ -30,7 +30,8 @@ body {
 }
 
 .menu {
-	position: fixed;
+	position: sticky;
+	top: 0;
 	background-color: #5a9c8d;
 	padding: 20px;
 	z-index: 1;
