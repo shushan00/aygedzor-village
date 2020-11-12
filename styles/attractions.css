@@ -50,7 +50,7 @@ body{
 	position: sticky;
 	top: 60px;
 	z-index: 2;
-	background-color:#5fc2ab;
+	background-color:#53b69f;
 	padding:15px;
 }
 
@@ -68,7 +68,7 @@ body{
 	padding:30px;
 	background-color:#77b1a3;
 	color:white;
-	font-size:20px;
+	font-size: 20px;
 	z-index: 2;
 }
 
