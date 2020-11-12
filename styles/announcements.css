@@ -30,6 +30,9 @@ body{
 }
 
 .page_section{
+	position: sticky;
+	top: 0;
+	z-index: 3;
 	background-color:#5a9c8d;
 	padding:20px;
 }
@@ -43,6 +46,9 @@ body{
 }
 
 .menu_bar{
+	position: sticky;
+	top: 60px;
+	z-index: 2;
 	background-color:#5fc2ab;
 	padding:15px;
 }
@@ -55,20 +61,14 @@ body{
 	text-decoration:none;
 }
 
-.churches img{
-	width:500px;
-	margin:50px;
-}
-
 .footer{
-	position: fixed;
-	bottom: 0%;
-	width: 100%;
+	position: relative;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	padding:30px;
 	background-color:#77b1a3;
 	color:white;
 	font-size:20px;
+	z-index: 2;
 }
 
 #myBtn {
