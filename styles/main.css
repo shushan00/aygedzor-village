@@ -51,7 +51,8 @@ a {
 
 .about {
 	position: absolute;
-	top: 250px;	
+	top: 250px;
+	text-align: center;
 	font-family: Didot, serif;
 	font-size: 50px;
 	color: white;
