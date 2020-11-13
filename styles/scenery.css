@@ -71,11 +71,21 @@ body{
 
 .content img {
 	display: inline-block;
+	opacity: 1;
 	text-align: center;
 	padding: 30px 5px;
 	margin: 10px;
 	max-width: 40%;
 	height: 82%;
+}
+
+.content p {
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	padding: 15px 10px;
+	color: white;
+	opacity: 0;
 }
 
 .footer{
