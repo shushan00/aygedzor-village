@@ -1,12 +1,12 @@
 body {
-	margin:0px;
+	margin: 0px;
 	background-color: #ffffff;
 }
 
 .head {
 	position: relative;
 	top: 0%;
-	height: 60px;
+	height: 20%;
 }
 
 .russian_flag {
@@ -28,12 +28,12 @@ body {
 .aygedzor {
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: #77b1a3;
-	margin-left: 20px;
+	margin-left: 2%;
 }
 
 .menu {
 	position: sticky;
-	top: 0;
+	top: 0%;
 	background-color: #5a9c8d;
 	padding: 20px;
 	z-index: 3;
@@ -55,8 +55,8 @@ a {
 }
 
 .content {
-	position: relative;
-	height: 426px;
+	position: absolute;
+	height: 85%;
 	background-color: #a2cece;
 	width: 100%;
 	z-index: 1;
@@ -64,28 +64,31 @@ a {
 
 .content img {
 	display: inline-block;
+	position: relative;
 	text-align: center;
 	padding-top: 45px;
-	padding-left: 15px;
+	padding-left: 30px;
 	margin: 0px;
-	max-width: 80%;
-	height: 75%;
+	max-width: 35%;
+	height: 65%;
 	cursor: pointer;
 }
 
 .content p {
 	position: absolute;
-	top: 10%;
-	left: 65%;
+	top: 2%;
+	right: 4%;
 	height: auto;
-	width: 30%;
+	width: 25%;
 	color: #000000;
-	font-size: larger;
+	font-size: 150%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .footer {
-	position: relative;
+	position: fixed;
+	bottom: 0%;
+	width: 100%;
 	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	font-size: 20px;
 	margin-top: -25px;
